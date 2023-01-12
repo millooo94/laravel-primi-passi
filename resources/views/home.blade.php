@@ -1,5 +1,5 @@
 <?php
-$arrMenu = ['Europe', 'Africa', 'Asia', 'North America', 'South America', 'Antartica'];
+$arrMenu = ['Europe', 'Africa', 'Asia', 'North America', 'South America', 'Oceania', 'Antartica'];
 ?>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -21,11 +21,10 @@ $arrMenu = ['Europe', 'Africa', 'Asia', 'North America', 'South America', 'Antar
             <nav>
                 <ul>
                     <?php
-                    for($i = 0; $i < count($arrMenu); $i++) { ?>
-
-                    <li><a href=""><?php $arrMenu[$i] ?></a></li>
-
-                  <?php  } ?>
+                    @@foreach ($arrMenu as $item)
+                   echo ?> <li><?php $item ?></li>
+                    <?php @endforeach
+                    ?>
                 </ul>
             </nav>
         </section>
