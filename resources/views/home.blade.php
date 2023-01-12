@@ -20,9 +20,12 @@ $arrMenu = ['Europe', 'Africa', 'Asia', 'North America', 'South America', 'Antar
         <section class="nav">
             <nav>
                 <ul>
-                    @@foreach ($arrMenu as $item)
-                    <li>{{$item}}</li>
-                    @endforeach
+                    <?php
+                    for($i = 0; $i < count($arrMenu); $i++) { ?>
+
+                    <li><a href=""><?php $arrMenu[$i] ?></a></li>
+
+                  <?php  } ?>
                 </ul>
             </nav>
         </section>

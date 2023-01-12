@@ -14,5 +14,35 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::get('/europe', function () {
+    return view('europe');
+});
+
+Route::get('/africa', function () {
+    return view('africa');
+});
+
+Route::get('/asia', function () {
+    return view('asia');
+});
+
+Route::get('/north-america', function () {
+    return view('north-america');
+});
+
+Route::get('/south-america', function () {
+    return view('south-america');
+});
+
+Route::get('/oceania', function () {
+    return view('oceania');
+});
+
+Route::get('/antartica', function () {
+    return view('antartica');
+});
+
+
